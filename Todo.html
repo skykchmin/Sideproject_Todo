@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo</title>
+    <link rel="stylesheet" href="./Todo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <div class="js-clock">
-            <h1>00:00</h1>
+            <h1 clock-box>00:00</h1>
         </div>
         <div class="js-date">
-            <h2 class="date-box">00-00-00</h2>
+            <h2 class="date-box"></h2>
         </div>
+        <div class="js-food">
+            <h3 class="food-box"></h3>
+        </div> <!--랜덤으로 음식뽑기-->
         <form class=""></form>
         <div class="doContainer">
             <form class="js-toDoForm toDoForm">
@@ -20,14 +25,11 @@
             </form>
         </div>
         <ul class="js-toDoList toDoList"></ul>
-
-        <div class="food"></div> <!--랜덤으로 음식뽑기-->
-        
     </div>
 
-    <script src="clock.js"></script>
     <script src="date.js"></script>
-    <!-- <script src="todo.js"></script>
-    <script src="food.js"></script> -->
+    <script src="clock.js"></script>
+    <script src="todo.js"></script>
+    <script src="food.js"></script>
 </body>
 </html>

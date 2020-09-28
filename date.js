@@ -1,17 +1,18 @@
-const dateContainer = document.querySelector('.js-date');
-const dateTitle = dateContainer.querySelector(".date-box");
+const dateContainer = document.querySelector(".js-date"),
+ dateTitle = dateContainer.querySelector("h2");
 
-function getDate(){
+function getdate(){
     const date = new Date();
     const yeartime = date.getFullYear();
     const monthtime = date.getMonth() + 1;
     const datetime = date.getDate();
 
     dateTitle.innertext = `${yeartime}-${monthtime}-${datetime}`;
+    
 }
 
 function init(){
-    getDate();
+    getdate();
 }
 
 init();
